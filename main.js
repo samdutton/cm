@@ -1,20 +1,30 @@
-const storeButton = document.getElementById('store');
+const registerButton = document.getElementById('register');
+registerButton.onclick = register;
+
+const loginButton = document.getElementById('login');
+loginButton.onclick = login;
+
+const logoutButton = document.getElementById('logout');
+logoutButton.onclick = logout;
 
 
 // Register a user:
+// • Get data from form. 
 // • Upload credential data to server.
 // • Store credentials on client.
 async function register() {
   const credential = new window.PasswordCredential({
     email: getValue('email'),
-    name: getValue('email'),
+    name: getValue('name'),
     password: getValue('password'),
   })
+  
+  // A production app would validate the credential data.
 
-  uploadCredentialData();
+  registerUserOnServer(credential);
   
   await navigator.credentials.store(credential);
-  console.log(`Credentials stored for ${getValue('name')}`);
+  console.log(`Stored credential data for ${credential.name}`);
 }
 
 async function login() {
@@ -38,8 +48,15 @@ function isValid(credential) {
   return true;
 }
 
+// Upload credential data to your server to register a new user.
+function registerUserOnServer(credential) {
+  // TODO: POST request to your server.
+  console.log(`Registered user ${credential.name} on server`);
+}
+
+
 // Get the value of an element.
 // NB: a production app would sanitize values here and on the backend.
-function getValue(id) {
-  return document.getElementById(id).value;
+function getValue(name) {
+  return document.querySelector(`input[name=${name}]`).value;
 }
