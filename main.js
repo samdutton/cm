@@ -1,14 +1,18 @@
 const storeButton = document.getElementById('store');
 
 
-// Store the credential.
-async function store() {
+// Register a user:
+// • Upload credential data to server.
+// • Store credentials on client.
+async function register() {
   const credential = new window.PasswordCredential({
     email: getValue('email'),
     name: getValue('email'),
     password: getValue('password'),
   })
 
+  uploadCredentialData();
+  
   await navigator.credentials.store(credential);
   console.log(`Credentials stored for ${getValue('name')}`);
 }
@@ -35,7 +39,7 @@ function isValid(credential) {
 }
 
 // Get the value of an element.
-// NB: a production app must sanitize values.
+// NB: a production app would sanitize values here and on the backend.
 function getValue(id) {
   return document.getElementById(id).value;
 }

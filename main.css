@@ -38,7 +38,7 @@ form div {
 }
 
 form {
-  margin: 0 0 40px 0;
+  margin: 0 0 20px 0;
 }
 
 input {
@@ -46,7 +46,7 @@ input {
   font-weight: 100;
   padding: 5px;
   top: 0;
-  width: calc(100% - 106px);
+  width: calc(100% - 110px);
 }
 
 input[type=email]:not(:placeholder-shown):invalid {
