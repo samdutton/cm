@@ -2,7 +2,7 @@
 // Store the credential.
 async function store() {
   const credential = new window.PasswordCredential({
-    id: getValue('email'),
+    email: getValue('email'),
     name: getValue('email'),
     password: getValue('password'),
   })
@@ -16,32 +16,20 @@ async function login() {
   if (!credential) {
     console.log('No credentials stored.');
   }
-
-  console.log(`You are now logged in as ${credential.id}.`)
+  if (isValid(credential)) {
+    console.log(`You are now logged in as ${credential.name}.`)
+  } else {
+    console.log(`Invalid credentials.`)
+  } 
 }
 
-const logout = () => {
-  show('You are now logged out.')
+function logout() {
+  console.log('You are now logged out.');
 }
 
-const show = (msg) => {
-  document.getElementById('welcome-text').innerHTML = msg
-}
-
-const callRegister = (user) => {
-  return new Promise((resolve, reject) => {
-    if (!user.email) {
-      return reject(new Error('username too short'))
-    }
-
-    if (!user.password) {
-      return reject(new Error('password too short'))
-    }
-
-    resolve({
-      avatar: `https://www.gravatar.com/avatar/${md5(user.email)}?d=robohash`,
-    })
-  })
+// A production app would check on your server if the credentials are valid.
+function isValid(credential) {
+  return true;
 }
 
 // Get the value of an element.
