@@ -1,5 +1,9 @@
 * {
-  font-family: Google Sans, sans-serif;
+  font-family: sans-serif;
+}
+
+body {
+  padding: 30px 20px;
 }
 
 form div {
@@ -7,21 +11,21 @@ form div {
 }
 
 input {
-  font-size: 18px;
-  font-weight: 300;
-  padding: 8px;
+  font-size: 16px;
+  font-weight: 100;
+  padding: 5px;
   top: 0;
-  width: calc(100% - 40px);
+  width: calc(100% - 106px);
 }
 
 label {
   display: inline-block;
-  width: 100px;
+  font-weight: 500;
+  width: 90px;
 }
 
 main {
-  border: 1px solid red;
   margin: 0 auto 0 auto;
-  max-width: 750px;  
+  max-width: 500px;  
 }
 
