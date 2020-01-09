@@ -11,10 +11,10 @@ button {
   border: none;
   border-radius: 2px;
   color: white;
-  float: right;
   font-size: 16px;
-  margin: 0 0 0 0;
+  margin: 0 20px 0 0;
   padding: 10px;
+  width: 90px;
 }
 
 button:active {
@@ -31,6 +31,11 @@ button[disabled] {
 
 button[disabled]:hover {
   background-color: #d84a38;
+}
+
+div#buttons {
+  display: flex;
+  justify-content: flex-end;
 }
 
 form div {
