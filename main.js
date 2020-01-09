@@ -1,3 +1,5 @@
+const storeButton = document.getElementById('store');
+
 
 // Store the credential.
 async function store() {
