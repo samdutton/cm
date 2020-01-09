@@ -1,18 +1,11 @@
 
 async function register() {
-  const user = {
-    email: getValue('email'),
-    name: document.getElementById('email').value.trim(),
-    password: document.getElementById('password').value,
-  }
-
 
   // Persist access information in the local credentials store
   const credential = new PasswordCredential({
-    id: user.email,
-    password: user.password,
-    name: `${user.firstName || ''} ${user.lastName || ''}`.trim(),
-    iconURL: registeredUser.avatar,
+    id: getValue('email'),
+    name: getValue('email'),
+    password: getValue('password'),
   })
 
   await navigator.credentials.store(credential)
@@ -56,3 +49,5 @@ const callRegister = (user) => {
     })
   })
 }
+
+function getValue()
