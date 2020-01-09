@@ -14,7 +14,7 @@ logoutButton.onclick = logout;
 // • Store credentials on client.
 async function register() {
   const credential = new window.PasswordCredential({
-    email: getValue('email'),
+    id:  getValue('email'),
     name: getValue('name'),
     password: getValue('password'),
   })
