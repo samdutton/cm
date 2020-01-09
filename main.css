@@ -20,10 +20,8 @@ input {
 
 input[type=email]:not(:placeholder-shown):invalid {
   outline-color: red;
-  outline-style: auto
-}
-
-input:focus:invalid {
+  outline-offset: -2px;
+  outline-style: auto;
 }
 
 label {

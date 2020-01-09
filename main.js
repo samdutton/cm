@@ -1,7 +1,6 @@
 
+// Save to
 async function register() {
-
-  // Persist access information in the local credentials store
   const credential = new PasswordCredential({
     id: getValue('email'),
     name: getValue('email'),
@@ -50,4 +49,8 @@ const callRegister = (user) => {
   })
 }
 
-function getValue()
+// Get the value of an element.
+// NB: a production app must sanitize values.
+function getValue(id) {
+  return document.getElementById(id).value;
+}
