@@ -1,28 +1,23 @@
 
-// Save to
-async function register() {
-  const credential = new PasswordCredential({
+// Store the credential.
+async function store() {
+  const credential = new window.PasswordCredential({
     id: getValue('email'),
     name: getValue('email'),
     password: getValue('password'),
   })
 
-  await navigator.credentials.store(credential)
-  show(`Credentials stored for ${user.email}`)
+  await navigator.credentials.store(credential);
+  console.log(`Credentials stored for ${getValue('name')}`);
 }
 
-const login = async () => {
-  const cred = await navigator.credentials.get({password: true})
-  if (!cred) {
-    return show('No credentials in store.')
+async function login() {
+  const credential = await navigator.credentials.get({password: true})
+  if (!credential) {
+    console.log('No credentials stored.');
   }
 
-  // This is where the credentials are sent to the server for authentication.
-  // username: cred.id
-  // password: cred.password
-  //
-  // For the purpose of this example, we will assume that the server was happy.
-  show(`You are now logged in as ${cred.id}.`)
+  console.log(`You are now logged in as ${credential.id}.`)
 }
 
 const logout = () => {
