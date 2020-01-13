@@ -6,6 +6,7 @@ a[href=forgot-password] {
   display: block;
   font-family: 'Google Sans Light', sans-serif;
   font-size: 15px;
+  height: 20px;
   margin: 0 0 50px 0;
   text-align: center;
 }
@@ -17,13 +18,13 @@ body {
 button#show-password {
   background: none;
   border: none;
-  float: right;
   font-family: 'Google Sans Light', sans-serif;
   font-size: 15px;
   font-weight: 100;
   padding: 0;
-  position: relative;
-  top: -24px;
+  position: absolute;
+  top: 0;
+  right:  0;
 }
 
 button#sign-in {
@@ -33,6 +34,7 @@ button#sign-in {
   color: white;
   cursor: pointer;
   font-size: 16px;
+  margin: 0 0 30px 0;
   padding: 15px 10px;
   width: 100%;
 }
@@ -53,6 +55,10 @@ button#sign-in[disabled]:hover {
   background-color: #d84a38;
 }
 
+div {
+  position: relative;
+}
+
 form {
   margin: 0 0 40px 0;
 }
@@ -66,7 +72,7 @@ input {
   font-family: 'Google Sans Light', sans-serif;
   font-size: 16px;
   font-weight: 100;
-  margin: 0 0 40px 0;
+  margin: 0 0 30px 0;
   padding: 15px;
   width: calc(100% - 34px);
 }
@@ -90,5 +96,11 @@ main {
   min-width: 200px;
 }
 
+p#privacy-policy {
+  font-family: 'Google Sans Light', sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  text-align: center;
+}
 
 
