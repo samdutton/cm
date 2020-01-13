@@ -1,5 +1,5 @@
 * {
-  font-family: sans-serif;
+  font-family: 'Google ', sans-serif;
 }
 
 body {
@@ -12,13 +12,8 @@ button {
   border-radius: 2px;
   color: white;
   font-size: 16px;
-  margin: 0 20px 0 0;
-  padding: 10px;
-  width: 90px;
-}
-
-button:last-of-type {
-  margin: 0;
+  padding: 15px 10px;
+  width: 100%;
 }
 
 button:active {
@@ -37,26 +32,17 @@ button[disabled]:hover {
   background-color: #d84a38;
 }
 
-div#buttons {
-  display: flex;
-  justify-content: flex-end;
-}
-
-form div {
-  margin: 0 0 20px 0;
-}
-
 form {
   margin: 0 0 40px 0;
 }
 
 input {
+  font-family: Google Sans, sans-serif;
   font-size: 16px;
   font-weight: 100;
-  margin: 0 0 20px o
-  padding: 5px;
-  top: 0;
-  width: calc(100% - 110px);
+  margin: 0 0 40px 0;
+  padding: 15px;
+  width: calc(100% - 34px);
 }
 
 input[type=email]:not(:placeholder-shown):invalid {
@@ -67,14 +53,14 @@ input[type=email]:not(:placeholder-shown):invalid {
 
 label {
   display: block;
+  font-size: 16px;
   font-weight: 500;
   margin: 0 0 5px 0;
-  width: 90px;
 }
 
 main {
   margin: 0 auto 0 auto;
-  max-width: 500px;  
+  max-width: 400px;  
 }
 
 
