@@ -55,7 +55,7 @@ function registerUserOnServer(credential) {
 }
 
 
-// Get the value of an element.
+// Get the value of a form element.
 // NB: a production app would sanitize values here and on the backend.
 function getValue(name) {
   return document.querySelector(`input[name=${name}]`).value;
