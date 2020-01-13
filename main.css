@@ -20,8 +20,7 @@ button#toggle-password {
   border: none;
   cursor: pointer;
   font-family: 'Google Sans', sans-serif;
-  font-size: 15px;
-  font-weight: 100;
+  font-size: 16px;
   padding: 0;
   position: absolute;
   top: 0;
@@ -141,11 +140,12 @@ p#privacy-policy {
 
 @media (min-width: 450px) {
   a[href=forgot-password] {
-    font-family: 'Google Sans Light', sans-serif;
     font-size: 15px;
   }
   button#toggle-password {
-    font-family: 'Google Sans Light', sans-serif;    
+    font-family: 'Google Sans Light', sans-serif;  
+    font-size: 15px;
+    font-weight: 100;
   }
 }
 
