@@ -15,7 +15,7 @@ body {
   padding: 30px 20px;
 }
 
-button#show-password {
+button#toggle-password {
   background: none;
   border: none;
   cursor: pointer;
@@ -29,6 +29,7 @@ button#show-password {
 }
 
 button#create-account {
+  background: white;
   border: 1px solid #333;
   border-radius: 2px;
   color: #333;

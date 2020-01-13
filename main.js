@@ -1,9 +1,6 @@
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
 
-const registerButton = document.getElementById('register');
-registerButton.onclick = register;
-
 const togglePasswordButton = document.getElementById('toggle-password');
 togglePasswordButton.onclick = togglePassword;
 
@@ -55,13 +52,14 @@ function registerUserOnServer(credential) {
 function togglePassword() {  
   if (passwordInput.type === 'password') {
     passwordInput.type = 'text';
-    togglePasswordButton.value = 'Hide password';
+    togglePasswordButton.textContent = 'Hide password';
     togglePasswordButton.setAttribute('aria-label', 'Hide password.');
   } else {
     passwordInput.type = 'password';
-    togglePasswordButton.value = 'Show password';
+    togglePasswordButton.textContent = 'Show password';
     togglePasswordButton.setAttribute('aria-label', 'Show password as plain text. Warning: this will display your password on the screen.');
   }
+  return false;
 }
 
 
