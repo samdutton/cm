@@ -19,7 +19,7 @@ button#toggle-password {
   background: none;
   border: none;
   cursor: pointer;
-  font-family: 'Google Sans Light', sans-serif;
+  font-family: 'Google Sans', sans-serif;
   font-size: 15px;
   font-weight: 100;
   padding: 0;
@@ -36,6 +36,7 @@ button#create-account {
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
+  margin: 0 0 30px 0;
   padding: 15px 10px;
   width: 100%;
 }
@@ -136,6 +137,16 @@ p#privacy-policy {
   line-height: 25px;
   margin: 0 0 30px 0;
   text-align: center;
+}
+
+@media (min-width: 450px) {
+  a[href=forgot-password] {
+    font-family: 'Google Sans Light', sans-serif;
+    font-size: 15px;
+  }
+  button#toggle-password {
+    font-family: 'Google Sans Light', sans-serif;    
+  }
 }
 
 
