@@ -4,8 +4,8 @@ const passwordInput = document.getElementById('password');
 const registerButton = document.getElementById('register');
 registerButton.onclick = register;
 
-const showPasswordButton = document.getElementById('show-password');
-showPasswordButton.onclick = togglePassword;
+const togglePasswordButton = document.getElementById('toggle-password');
+togglePasswordButton.onclick = togglePassword;
 
 // Register a user:
 // • Get data from form. 
@@ -55,10 +55,12 @@ function registerUserOnServer(credential) {
 function togglePassword() {  
   if (passwordInput.type === 'password') {
     passwordInput.type = 'text';
-    toggle.innerHTML = 'hide';
+    togglePasswordButton.value = 'Hide password';
+    togglePasswordButton.setAttribute('aria-label', 'Hide password.');
   } else {
     passwordInput.type = 'password';
-    toggle.innerHTML = 'show';
+    togglePasswordButton.value = 'Show password';
+    togglePasswordButton.setAttribute('aria-label', 'Show password as plain text. Warning: this will display your password on the screen.');
   }
 }
 
