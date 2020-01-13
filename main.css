@@ -2,6 +2,14 @@
   font-family: 'Google Sans', sans-serif;
 }
 
+a[href=forgot-password] {
+  display: block;
+  font-family: 'Google Sans Light', sans-serif;
+  font-size: 15px;
+  margin: 0 0 50px 0;
+  text-align: center;
+}
+
 body {
   padding: 30px 20px;
 }
@@ -10,7 +18,9 @@ button#show-password {
   background: none;
   border: none;
   float: right;
+  font-family: 'Google Sans Light', sans-serif;
   font-size: 15px;
+  font-weight: 100;
   padding: 0;
   position: relative;
   top: -24px;
@@ -47,6 +57,11 @@ form {
   margin: 0 0 40px 0;
 }
 
+h1 {
+  margin: 0 0 100px 0;
+  text-align: center;
+}
+
 input {
   font-family: 'Google Sans Light', sans-serif;
   font-size: 16px;
@@ -72,6 +87,7 @@ label {
 main {
   margin: 0 auto 0 auto;
   max-width: 400px;  
+  min-width: 200px;
 }
 
 
