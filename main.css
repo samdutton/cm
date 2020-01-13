@@ -5,22 +5,23 @@
 a[href=forgot-password] {
   display: block;
   font-family: 'Google Sans Light', sans-serif;
-  font-size: 15px;
-  height: 20px;
+  font-size: 20px;
+  height: 18px;
   margin: 0 0 30px 0;
   text-align: center;
 }
 
 body {
-  padding: 30px 20px;
+  padding: 20px 20px;
 }
 
 button#toggle-password {
   background: none;
   border: none;
   cursor: pointer;
-  font-family: 'Google Sans', sans-serif;
-  font-size: 16px;
+  font-family: 'Google Sans Light', sans-serif;
+  font-size: 19.5px;
+  font-weight: 300;
   padding: 0;
   position: absolute;
   top: 0;
@@ -33,7 +34,7 @@ button#create-account {
   border-radius: 2px;
   color: #333;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
   margin: 0 0 30px 0;
   padding: 15px 10px;
@@ -56,7 +57,7 @@ button#sign-in {
   border-radius: 2px;
   color: white;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
   padding: 15px 10px;
   width: 100%;
 }
@@ -142,10 +143,23 @@ p#privacy-policy {
   a[href=forgot-password] {
     font-size: 15px;
   }
+
+  body {
+    padding: 30px 20px;
+  }
+
+
+
+  button#create-account {
+    font-size: 16px;
+  }
+
+  button#sign-in {
+    font-size: 16px;
+  }
+
   button#toggle-password {
-    font-family: 'Google Sans Light', sans-serif;  
     font-size: 15px;
-    font-weight: 100;
   }
 }
 
