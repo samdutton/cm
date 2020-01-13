@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Credential Management API demo</title>
+    <title>Credential Management API demo: sign in</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/main.css">
-    
-    <!-- import the webpage's javascript file -->
+    <link rel="stylesheet" href="/main.css">    
     <script src="/main.js" defer></script>
   </head>  
   <body>
@@ -17,26 +13,16 @@
     
       <form>
         <div>
-          <label for="name">Name:</label>
-          <input id="name" name="name" autocomplete="name" required>
-        </div>
-        <div>
-          <label for="email" required>Email:</label>
+          <label for="email" required>Email</label>
           <input id="email" name="email" type="email" placeholder=" " autocomplete="email" required>
         </div>
         <div>
-          <label for="password">Password:</label>
+          <label for="password">Password</label>
           <input name="password" type="password" autocomplete="new-password" required>
         </div>
+        <button id="sign-in" type="submit">Sign in</button>
       </form>
-      
-      <div id="buttons">
-        <button id="register">Register</button>
-        <button id="login">Login</button>
-        <button id="logout">Logout</button>
-      </div>
-
-      
+            
     </main>
     
   </body>
