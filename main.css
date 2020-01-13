@@ -6,6 +6,16 @@ body {
   padding: 30px 20px;
 }
 
+button#show-password {
+  background: none;
+  border: none;
+  float: right;
+  font-size: 15px;
+  padding: 0;
+  position: relative;
+  top: -24px;
+}
+
 button#sign-in {
   background-color: #d84a38;
   border: none;
