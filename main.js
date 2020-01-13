@@ -19,10 +19,10 @@ async function register() {
     password: getValue('password'),
   })
   
-  // A production app would validate the credential data.
+  // A production app would sanitize and validate the credential data.
+
 
   registerUserOnServer(credential);
-  
   await navigator.credentials.store(credential);
   console.log(`Stored credential data for ${credential.name}`);
 }
