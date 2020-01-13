@@ -1,12 +1,11 @@
+const emailInput = document.getElementById('email');
+const passwordInput = document.getElementById('password');
+
 const registerButton = document.getElementById('register');
 registerButton.onclick = register;
 
-const loginButton = document.getElementById('login');
-loginButton.onclick = login;
-
-const logoutButton = document.getElementById('logout');
-logoutButton.onclick = logout;
-
+const showPasswordButton = document.getElementById('show-password');
+showPasswordButton.onclick = togglePassword;
 
 // Register a user:
 // • Get data from form. 
@@ -14,9 +13,8 @@ logoutButton.onclick = logout;
 // • Store credentials on client.
 async function register() {
   const credential = new window.PasswordCredential({
-    id:  getValue('email'),
-    name: getValue('name'),
-    password: getValue('password'),
+    id:  emailInput.value,
+    password: passwordInput.value,
   })
   
   // A production app would sanitize and validate the credential data.
@@ -54,9 +52,14 @@ function registerUserOnServer(credential) {
   console.log(`Registered user ${credential.name} on server`);
 }
 
-
-// Get the value of a form element.
-// NB: a production app would sanitize values here and on the backend.
-function getValue(name) {
-  return document.querySelector(`input[name=${name}]`).value;
+function togglePassword() {  
+  if (passwordInput.type === 'password') {
+    passwordInput.type = 'text';
+    toggle.innerHTML = 'hide';
+  } else {
+    passwordInput.type = 'password';
+    toggle.innerHTML = 'show';
+  }
 }
+
+

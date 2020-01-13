@@ -6,7 +6,7 @@ body {
   padding: 30px 20px;
 }
 
-button {
+button#sign-in {
   background-color: #d84a38;
   border: none;
   border-radius: 2px;
@@ -17,19 +17,19 @@ button {
   width: 100%;
 }
 
-button:active {
+button:active#sign-in {
   background-color: #cf402f;
 }
 
-button:hover {
+button:hover#sign-in {
   background-color: #cf402f;
 }
 
-button[disabled] {
+button#sign-in[disabled] {
   color: #ccc;
 }
 
-button[disabled]:hover {
+button#sign-in[disabled]:hover {
   background-color: #d84a38;
 }
 
