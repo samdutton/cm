@@ -2,6 +2,15 @@
   font-family: 'Google Sans', sans-serif;
 }
 
+a {
+  color: #444;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 a[href=forgot-password] {
   display: block;
   font-family: 'Google Sans Light', sans-serif;
@@ -16,7 +25,6 @@ a[href$='/'] {
   color: white;
   font-weight: 800;
   padding: 6px 7px 5px 8px;
-  text-decoration: none;
 }
 
 a[href=sign-in] {
@@ -25,11 +33,13 @@ a[href=sign-in] {
   text-decoration: none;
 }
 
-a[href=sign-in]:hover {
-  text-decoration: underline;
+footer a {
+  font-family: 'Google Sans Light', sans-serif;
+  font-weight: 100;
 }
 
 body {
+  height: 100%;
   margin: 0;
 }
 
@@ -104,6 +114,13 @@ div {
   position: relative;
 }
 
+footer {
+  background: #fafafa;
+  border-top: 1px solid #eee;
+  margin: 0 0 20px 0;
+  padding: 10px;
+}
+
 form {
   margin: 0 0 35px 0;
 }
@@ -136,6 +153,10 @@ hr {
   margin: 0 0 30px 0;
 }
 
+html {
+  height: 100%;
+}
+
 input {
   border: 1px solid #eee;
   font-family: 'Google Sans Light', sans-serif;
@@ -160,7 +181,7 @@ label {
 }
 
 main {
-  margin: 0 auto 0 auto;
+  margin: 0 auto auto auto;
   max-width: 470px;
   min-width: 200px;
   padding: 0 20px;
@@ -196,6 +217,10 @@ p#set-password {
 
   button#toggle-password {
     font-size: 15px;
+  }
+  
+  footer {
+    padding: 20px;
   }
 
   header {
