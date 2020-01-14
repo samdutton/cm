@@ -108,6 +108,7 @@ hr {
 }
 
 input {
+  border: 1px solid #eee;
   font-family: 'Google Sans Light', sans-serif;
   font-size: 16px;
   font-weight: 100;
