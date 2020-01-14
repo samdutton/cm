@@ -13,7 +13,7 @@ a:hover {
 
 a[href=forgot-password] {
   display: block;
-  font-family: 'Google Sans Light', sans-serif;
+  font-family: 'Google Sans Light', 'Google Sans', sans-serif;
   font-size: 20px;
   height: 18px;
   margin: 0 0 30px 0;
@@ -35,7 +35,7 @@ a[href=sign-in] {
 }
 
 footer a {
-  font-family: 'Google Sans Light', sans-serif;
+  font-family: 'Google Sans Light', 'Google Sans', sans-serif;
   font-size: 16px;
   font-weight: 300;
 }
@@ -55,7 +55,7 @@ button#toggle-password {
   background: none;
   border: none;
   cursor: pointer;
-  font-family: 'Google Sans Light', sans-serif;
+  font-family: 'Google Sans Light', 'Google Sans', sans-serif;
   font-size: 19.5px;
   font-weight: 300;
   padding: 0;
@@ -163,7 +163,7 @@ html {
 
 input {
   border: 1px solid #eee;
-  font-family: 'Google Sans Light', sans-serif;
+  font-family: 'Google Sans Light', 'Google Sans', sans-serif;
   font-size: 16px;
   font-weight: 100;
   margin: 0 0 30px 0;
@@ -192,7 +192,7 @@ main {
 }
 
 p#privacy-policy {
-  font-family: 'Google Sans Light', sans-serif;
+  font-family: 'Google Sans Light', 'Google Sans', sans-serif;
   font-size: 15px;
   font-weight: 100;
   line-height: 25px;
@@ -201,8 +201,8 @@ p#privacy-policy {
 }
 
 p#set-password {
-  font-family: 'Google Sans Light', sans-serif;
-  font-weight: 100;
+  font-family: 'Google Sans Light', 'Google Sans', sans-serif;
+  font-weight: 300;
   margin: 0 0 50px 0;
 }
 
