@@ -11,8 +11,18 @@ a[href=forgot-password] {
   text-align: center;
 }
 
+a[href=home] {
+  background: #444;
+  color: white;
+  font-weight: 800;
+  padding: 6px 7px 5px 8px;
+  text-decoration: none;
+}
+
+
+
 a[href=sign-in] {
-  text-
+  margin-left: auto;
 }
 
 body {
@@ -107,8 +117,7 @@ h2 {
 header {
   background: #fafafa;
   border-bottom: 1px solid #eee;
-   display: flex;
-  justify-content: space-between;
+  display: flex;
   margin: 0 0 10px 0;
   padding: 10px;
 }
