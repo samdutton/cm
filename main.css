@@ -11,7 +11,7 @@ a[href=forgot-password] {
   text-align: center;
 }
 
-a[href=home] {
+a[href$='/'] {
   background: #444;
   color: white;
   font-weight: 800;
@@ -20,9 +20,14 @@ a[href=home] {
 }
 
 
-
 a[href=sign-in] {
-  margin-left: auto;
+  color: #444;
+  margin: auto 0 auto auto;  
+  text-decoration: none;
+}
+
+a[href=sign-in]:hover {
+  text-decoration: underline;
 }
 
 body {
