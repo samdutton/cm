@@ -1,9 +1,6 @@
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
 
-const cancelButton = document.getElementById('cancel');
-cancelButton.onclick = () => {location.href='/';};
-
 const createAccountButton = document.getElementById('create-account');
 createAccountButton.onclick = () => {location.href='create-account';};
 
