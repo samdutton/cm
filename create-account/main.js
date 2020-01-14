@@ -1,2 +1,2 @@
-const cancelButton = document.getElementById('cancel');
-cancelButton.onclick = () => {location.href='/';};
+const signInButton = document.getElementById('sign-in');
+signInButton.onclick = () => {location.href='/sign-in';};
