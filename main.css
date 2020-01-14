@@ -217,7 +217,8 @@ p#set-password {
   }
 
   a[href=sign-in] {
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 300;
   }
 
   footer a {
