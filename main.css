@@ -12,7 +12,7 @@ a {
 }
 
 a:hover {
-  color`; black;
+  color; black;
   text-decoration: underline;
 }
 
@@ -38,7 +38,6 @@ a[href$='/'] {
 }
 
 a[href=sign-in] {
-  color: #444;
   font-size: 20px;
   margin: auto 0 auto auto;
 }
