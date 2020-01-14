@@ -29,13 +29,15 @@ a[href$='/'] {
 
 a[href=sign-in] {
   color: #444;
+  font-size: 20px;
   margin: auto 0 auto auto;
   text-decoration: none;
 }
 
 footer a {
   font-family: 'Google Sans Light', sans-serif;
-  font-weight: 100;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 body {
@@ -120,6 +122,7 @@ footer {
   background: #fafafa;
   border-top: 1px solid #eee;
   padding: 10px;
+  text-align: center;
 }
 
 form {
@@ -183,8 +186,8 @@ label {
 
 main {
   margin: 0 auto auto auto;
-  max-width: 470px;
-  min-width: 200px;
+  max-width: calc(100% - 40px);
+  width: 470px;
   padding: 0 20px;
 }
 
@@ -207,6 +210,14 @@ p#set-password {
   a[href=forgot-password] {
     font-size: 15px;
   }
+  
+  a[href=sign-in] {
+    font-size: 16px;
+  }
+  
+  footer a {
+    font-weight: 100;
+  }
 
   button.secondary {
     font-size: 16px;
@@ -223,7 +234,7 @@ p#set-password {
   footer {
     padding: 20px;
   }
-
+  
   header {
     margin: 0 0 40px 0;
     padding: 20px;
