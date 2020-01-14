@@ -107,6 +107,8 @@ h2 {
 header {
   background: #fafafa;
   border-bottom: 1px solid #eee;
+   display: flex;
+  justify-content: space-between;
   margin: 0 0 10px 0;
   padding: 10px;
 }
