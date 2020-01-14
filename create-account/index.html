@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Credential Management API demo: create-account</title>
+    <title>Credential Management API demo: create an accout</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/main.css">    
     <script src="/main.js" defer></script>
   </head>  
   <body>
-    <h1>Create account</h1>
+    <h1>Create an account</h1>
     
     <main>
     
@@ -24,18 +24,16 @@
           <input id="password" name="password" type="password" autocomplete="new-password" required>
         </div>
         
-        <button id="create-account" type="submit">Create account</button>
+        <p id="privacy-policy">By creating an account you agree to the website<br><a href="terms-and-conditions"  target="_blank" rel="noopener noreferrer">terms and conditions</a> and our <a href="privacy-policy"  target="_blank" rel="noopener noreferrer">privacy policy</a>.</p>   
+        
+        <button class="primary" id="create-account" type="submit">Create account</button>
 
       </form>
-
-      <a href="forgot-password">Forgot your password?</a>  
       
       <hr>
 
       <h2>Already have an account?</h2>
-      <button id="sign-in">Sign in</button>      
-        
-      <p id="privacy-policy">We treat your personal data with care.<br>Read our <a href="privacy-policy"  target="_blank" rel="noopener noreferrer">privacy policy</a> to find out more.</p>      
+      <button class="secondary" id="sign-in">Sign in</button>         
             
     </main>
     

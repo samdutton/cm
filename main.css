@@ -33,7 +33,7 @@ button#toggle-password {
   right:  0;
 }
 
-button#create-account {
+button.secondary {
   background: white;
   border: 1px solid #333;
   border-radius: 2px;
@@ -46,17 +46,17 @@ button#create-account {
   width: 100%;
 }
 
-button#create-account:active {
+button.secondary:active {
   border: 1px solid black;
   color: black;
 }
 
-button#create-account:hover {
+button.secondary:hover {
   border: 1px solid black;
   color: black;
 }
 
-button#sign-in {
+button.primary {
   background-color: #333;
   border: none;
   border-radius: 2px;
@@ -67,19 +67,19 @@ button#sign-in {
   width: 100%;
 }
 
-button#sign-in:active {
+button.primary:active {
   background-color: black;
 }
 
-button#sign-in:hover {
+button.primary:hover {
   background-color: black;
 }
 
-button#sign-in[disabled] {
+button.primary[disabled] {
   color: #ccc;
 }
 
-button#sign-in[disabled]:hover {
+button.primary[disabled]:hover {
   background-color: #d84a38;
 }
 
@@ -92,11 +92,15 @@ form {
 }
 
 h1 {
+  color: #444;
+  font-weight: 500; 
   margin: 0 0 30px 0;
   text-align: center;
 }
 
 h2 {
+  color: #666;
+  font-weight: 500; 
   margin: 0 0 30px 0;
   text-align: center;
 }
@@ -154,13 +158,11 @@ p#privacy-policy {
     padding: 30px 20px;
   }
 
-
-
-  button#create-account {
+  button.secondary {
     font-size: 16px;
   }
 
-  button#sign-in {
+  button.primary {
     font-size: 16px;
   }
 

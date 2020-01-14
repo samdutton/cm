@@ -4,6 +4,11 @@ const passwordInput = document.getElementById('password');
 const togglePasswordButton = document.getElementById('toggle-password');
 togglePasswordButton.onclick = togglePassword;
 
+const togglePasswordButton = document.getElementById('toggle-password');
+togglePasswordButton.onclick = togglePassword;
+
+
+
 // Register a user:
 // • Get data from form. 
 // • Upload credential data to server.
