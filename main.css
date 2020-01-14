@@ -39,6 +39,8 @@ footer a {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   margin: 0;
 }
@@ -117,7 +119,6 @@ div {
 footer {
   background: #fafafa;
   border-top: 1px solid #eee;
-  margin: 0 0 20px 0;
   padding: 10px;
 }
 
