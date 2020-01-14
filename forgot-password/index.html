@@ -4,7 +4,8 @@
     <title>Credential Management API demo: create a new password</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/main.css">    
+    <link rel="stylesheet" href="/main.css">
+    <script src="/main.js" defer></script>
   </head>  
   <body>
     
@@ -18,7 +19,12 @@
       <p id="set-password">Enter your email and we’ll send you a link to set your password.</p>
       <label for="email" required>Email</label>
       <input id="email" name="email" type="email" placeholder="Enter your email" autocomplete="email" required>
+      <button class="primary" id="continue">Continue</button>
+      <button class="secondary" id="cancel">Cancel</button>
+
     </main>
+    
+    <footer><a href="">Privacy • Terms and Conditions</footer>
 
    
   </body>
