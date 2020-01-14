@@ -1,8 +1,8 @@
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
 
-const togglePasswordButton = document.getElementById('toggle-password');
-togglePasswordButton.onclick = togglePassword;
+const createAccountButton = document.getElementById('create-account');
+createAccountButton.onclick = () => {location.href='create-account';};
 
 const togglePasswordButton = document.getElementById('toggle-password');
 togglePasswordButton.onclick = togglePassword;
