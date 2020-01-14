@@ -12,6 +12,7 @@ a {
 }
 
 a:hover {
+  color`; black;
   text-decoration: underline;
 }
 
@@ -40,7 +41,6 @@ a[href=sign-in] {
   color: #444;
   font-size: 20px;
   margin: auto 0 auto auto;
-  text-decoration: none;
 }
 
 footer a {
