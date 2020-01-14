@@ -12,12 +12,11 @@ a[href=forgot-password] {
 }
 
 a[href=sign-in] {
-  display: block;
-  text-align: center;
+  text-
 }
 
 body {
-  padding: 20px 20px;
+  margin: 0;
 }
 
 button#toggle-password {
@@ -105,6 +104,13 @@ h2 {
   text-align: center;
 }
 
+header {
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
+  margin: 0 0 10px 0;
+  padding: 10px;
+}
+
 hr {
   border-top: none;
   border-bottom: 1px solid #eee;
@@ -155,7 +161,6 @@ p#privacy-policy {
   }
 
   body {
-    padding: 30px 20px;
   }
 
   button.secondary {
@@ -169,6 +174,12 @@ p#privacy-policy {
   button#toggle-password {
     font-size: 15px;
   }
+  
+  header {
+    margin: 0 0 20px 0;
+    padding: 20px;
+  }
+
 }
 
 
