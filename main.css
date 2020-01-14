@@ -11,6 +11,11 @@ a[href=forgot-password] {
   text-align: center;
 }
 
+a[href=sign-in] {
+  display: block;
+  text-align: center;
+}
+
 body {
   padding: 20px 20px;
 }
