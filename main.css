@@ -30,11 +30,7 @@ a[href=forgot-password] {
 }
 
 a[href$='/'] {
-  background: #444;
-  color: white;
-  font-family: sans-serif;
-  font-weight: 800;
-  padding: 6px 7px 5px 8px;
+  font-size: 20px;
 }
 
 a[href=sign-in] {
@@ -169,6 +165,10 @@ html {
   height: 100%;
 }
 
+img#home-arrow {
+  margin: 0 20px 0 0;
+}
+
 input {
   border: 1px solid #eee;
   font-family: var(--light-font);
@@ -217,6 +217,11 @@ p#set-password {
 @media (min-width: 450px) {
   a[href=forgot-password] {
     font-size: 16px;
+  }
+
+  a[href='/'] {
+    font-size: 18px;
+    font-weight: 300;
   }
 
   a[href=sign-in] {
