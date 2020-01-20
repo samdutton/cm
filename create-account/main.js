@@ -37,6 +37,6 @@ async function createUserOnServer(credential) {
 // • Check if account exists.
 // • Respond accordingly.
 
-  return console.log(`Registered user ${credential.id} on server`);
+  console.log(`Registered user ${credential.id} on server`);
 }
 

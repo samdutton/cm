@@ -17,5 +17,6 @@ async function signIn(silent) {
     console.log(credential);
   } else {
     console.log('No credential');
+    location.href = '/sign-in';
   }
 }
