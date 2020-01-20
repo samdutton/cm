@@ -7,10 +7,6 @@ createAccountButton.onclick = createAccount;
 const togglePasswordButton = document.getElementById('toggle-password');
 togglePasswordButton.onclick = togglePassword;
 
-const credentials = navigator.credentials.get();
-
-console.log(credentials);
-
 function createAccount() {
   location.href='/create-account';
 }

@@ -18,12 +18,12 @@ async function createAccount() {
     id: emailInput.value,
     password: passwordInput.value,
   });
+  console.log(`Created account for ${credential.id}`);
   
-  await createUserOnServer(credential);
+  createUserOnServer(credential);
   await navigator.credentials.store(credential);
   console.log(`Created account for ${credential.id}`);
 }
-
 
 function signIn() {
   location.href='/sign-in';
