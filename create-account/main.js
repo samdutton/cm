@@ -1,21 +1,17 @@
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
 
-const createAccountButton = document.getElementById('sign-in');
+const createAccountButton = document.getElementById('create-account');
 createAccountButton.onclick = createAccount;
 
 const signInButton = document.getElementById('sign-in');
 signInButton.onclick = signIn;
-
-
-
 
 // Create account for user:
 // • Get data from form.
 // • Upload credential data to server.
 // • Store credentials on client.
 async function createAccount() {
-  console.log('foo');
   // TODO: validate and sanitize form data.
   const credential = new window.PasswordCredential({
     id: emailInput.value,
