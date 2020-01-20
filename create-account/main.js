@@ -12,6 +12,7 @@ signInButton.onclick = signIn;
 // • Upload credential data to server.
 // • Store credentials on client.
 async function createAccount() {
+  console.log(emailInput.value, passwordInput.value);
   // TODO: validate and sanitize form data.
   const credential = new window.PasswordCredential({
     id: emailInput.value,
@@ -19,9 +20,9 @@ async function createAccount() {
   });
   console.log(`Created account for ${credential.id}`);
   
-  createUserOnServer(credential);
-  await navigator.credentials.store(credential);
-  console.log(`Created account for ${credential.id}`);
+//   createUserOnServer(credential);
+//   await navigator.credentials.store(credential);
+  // console.log(`Created account for ${credential.id}`);
 }
 
 function signIn() {
