@@ -29,10 +29,14 @@ function signIn() {
   location.href='/sign-in';
 }
 
-// Make a request to your server to create an account.
-//
+// Make a request to your server to create the user.
 async function createUserOnServer(credential) {
-  // TODO: POST request to your server.
-  return console.log(`Registered user ${credential.name} on server`);
+// TODO: Make a request to your server to create an account.
+// TODO On server: 
+// • Sanitize and validate data.
+// • Check if account exists.
+// • Respond accordingly.
+
+  return console.log(`Registered user ${credential.id} on server`);
 }
 
