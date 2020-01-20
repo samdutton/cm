@@ -33,11 +33,6 @@ a[href$='/'] {
   font-size: 20px;
 }
 
-a[href=sign-in] {
-  font-size: 20px;
-  margin: auto 0 auto auto;
-}
-
 footer a {
   font-family: var(--light-font);
   font-size: 16px;
@@ -54,6 +49,18 @@ body {
 button#continue {
   margin: 0 0 20px 0;
 }
+
+button#sign-in {
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin: auto 0 auto auto;
+}
+
+button#sign-in:hover {
+  text-decoration: underline;
+}
+
 
 button#toggle-password {
   background: none;
