@@ -33,7 +33,7 @@ async function attemptSignIn() {
     console.log('Signed in:', credential);
     updateUI(credential);
     tellServerAboutSignIn(credential);
-    setSignedInState('true');
+    setSignedInState(true);
   }
 }
 
@@ -83,6 +83,6 @@ function handleSignInLinkClick() {
 
 function signOut() {
   tellServerAboutSignOut();
-  setSignedInState('false');
+  setSignedInState(false);
   navigator.credentials.preventSilentAccess();
 }
