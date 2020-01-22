@@ -33,9 +33,9 @@ async function attemptSignIn(event) {
     updateUI(credential);
     tellServerAboutSignIn(credential);
     setSignedInState('true');
-    location.href = '/';
+    location.href = '../';
   } else {
-    location.href = '/create-account';
+    location.href = '../create-account';
   }
 }
 

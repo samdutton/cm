@@ -67,7 +67,7 @@ function handleSignInLinkClick() {
   if (isSignedIn()) {
     signOut();
   } else {
-    location.href = '/sign-in';
+    location.href = 'sign-in';
   }
 }
 
