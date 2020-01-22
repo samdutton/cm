@@ -7,11 +7,18 @@ const signedInNameEl = document.getElementById('signed-in-name');
 const GOOGLE_SIGNIN = 'https://accounts.google.com';
 const FACEBOOK_LOGIN = 'https://www.facebook.com';
 
-// Just for demo.
-if (!isSignedIn()) {
-  attemptSignIn();
+// Simplified flow — just for demo.
+if (isSignedIn()) {
+  navigator.credentials.get({
+    password: true,
+    federated: {
+      providers: [GOOGLE_SIGNIN, FACEBOOK_LOGIN],
+    },
+  }).then((credential) => {
+    signedInNameEl.textContent = `Hello ${credential.name}!`;
+  });
 } else {
-
+  attemptSignIn();
 }
 
 async function attemptSignIn() {
@@ -30,6 +37,7 @@ async function attemptSignIn() {
   }
 }
 
+// TODO: Something more robust.
 function isSignedIn() {
   return localStorage['isSignedIn'] === 'true';
 }
