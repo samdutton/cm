@@ -1,2 +1,4 @@
 const cancelButton = document.getElementById('cancel');
-cancelButton.onclick = () => {location.href='/';};
+cancelButton.onclick = () => {
+  location.href = '../';
+};

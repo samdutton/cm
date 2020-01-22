@@ -16,7 +16,7 @@ const togglePasswordButton = document.getElementById('toggle-password');
 togglePasswordButton.onclick = togglePassword;
 
 function showCreateAccountPage() {
-  location.href='/create-account';
+  location.href='../create-account';
 }
 
 async function attemptSignIn(event) {

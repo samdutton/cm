@@ -26,7 +26,7 @@ async function createAccount(event) {
 }
 
 function signIn() {
-  location.href='/sign-in';
+  location.href='../sign-in';
 }
 
 // // Make a request to your server to create the user.
