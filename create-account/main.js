@@ -23,6 +23,7 @@ async function createAccount(event) {
   await createUserOnServer(credential);
   await navigator.credentials.store(credential);
   console.log('Stored credential:', credential);
+  location.href = '../';
 }
 
 function signIn() {
