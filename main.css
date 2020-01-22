@@ -17,15 +17,6 @@ a:hover {
   text-decoration: underline;
 }
 
-a#sign-in {
-  display: inline-block;
-  margin: auto 0 auto auto;
-}
-
-p#privacy-policy a {
-  text-decoration: underline;
-}
-
 a#forgot-password {
   display: block;
   font-family: var(--light-font);
@@ -37,6 +28,19 @@ a#forgot-password {
 
 a#home {
   font-size: 20px;
+}
+
+a#sign-in {
+  display: inline-block;
+  margin: auto 0 auto auto;
+}
+
+a#signed-in-name {
+  font-size: 20px;
+}
+
+p#privacy-policy a {
+  text-decoration: underline;
 }
 
 footer a {
