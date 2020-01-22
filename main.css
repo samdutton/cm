@@ -12,13 +12,19 @@ a {
 }
 
 a:hover {
-  color; black;
+  color: black;
+  cursor: pointer;
   text-decoration: underline;
+}
+
+a#sign-in {
+  display: inline-block;
+  margin: auto 0 auto auto;
 }
 
 p#privacy-policy a {
   text-decoration: underline;
-} 
+}
 
 a[href=forgot-password] {
   display: block;
@@ -48,20 +54,6 @@ body {
 
 button#continue {
   margin: 0 0 20px 0;
-}
-
-button#sign-in {
-  background: none;
-  border: none;
-  color: #444;
-  cursor: pointer;
-  font-size: 16px;
-  margin: auto 0 auto auto;
-}
-
-button#sign-in:hover {
-  color: black;
-  text-decoration: underline;
 }
 
 button#toggle-password {

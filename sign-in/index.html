@@ -4,24 +4,22 @@
     <title>Credential Management API demo: sign in</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/main.css">    
+    <link rel="stylesheet" href="/main.css">
     <script src="/sign-in/main.js" defer></script>
-  </head>  
+  </head>
   <body>
-    
+
     <header>
       <img id="home-arrow" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNiIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDYgMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTS40IDVsMy44IDVINkwyLjIgNSA2IDBINC4yTC40IDV6IiBmaWxsPSIjNEM0QzRDIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=" alt=""><a href="/">Home</a>
     </header>
 
-    
+
     <h1>Sign in</h1>
-    
+
     <main>
-    
-      <form>
-        
-        <div>
-          <label for="email" required>Email</label>
+
+      <form id="form">
+          <label for="email">Email</label>
           <input id="email" name="email" type="email" placeholder=" " autocomplete="email" required>
         </div>
         <div>
@@ -29,25 +27,23 @@
           <button id="toggle-password" aria-label="Show password as plain text. Warning: this will display your password on the screen.">Show password</button>
           <input id="password" name="password" type="password" autocomplete="new-password" required>
         </div>
-        
         <button class="primary" id="sign-in" type="submit">Sign in</button>
-
       </form>
 
-      <a href="forgot-password">Forgot your password?</a>  
-      
+      <a href="forgot-password">Forgot your password?</a>
+
       <hr>
 
       <h2>Don't have an account?</h2>
-      <button class="secondary" id="create-account">Create an account</button>      
-        
-      <p id="privacy-policy" target="_blank" rel="noopener noreferrer">We treat your personal data with care.<br>Read our <a href="privacy-policy">privacy policy</a> to find out more.</p>      
-            
+      <button class="secondary" id="create-account">Create an account</button>
+
+      <p id="privacy-policy" target="_blank" rel="noopener noreferrer">We treat your personal data with care.<br>Read our <a href="privacy-policy">privacy policy</a> to find out more.</p>
+
     </main>
-    
+
     <footer>
       <a href="/privacy-policy">Privacy Policy</a> • <a href="/terms-and-conditions">Terms and Conditions</a>
     </footer>
-    
+
   </body>
 </html>
