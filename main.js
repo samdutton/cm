@@ -44,8 +44,10 @@ function isSignedIn() {
 
 function setSignedInState(isSignedIn) {
   localStorage['isSignedIn'] = isSignedIn;
-  signInLink.textContent = isSignedIn ? 'Sign out' : 'Sign in';
-  if (!isSignedIn) {
+  if (isSignedIn) {
+    signInLink.textContent = 'Sign out';
+  } else {
+    signInLink.textContent = 'Sign in';
     signedInNameEl.textContent = '';
   }
 }
