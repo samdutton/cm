@@ -219,6 +219,10 @@ p#set-password {
   margin: 0 0 50px 0;
 }
 
+p#sign-in-hint {
+  text-align: center;
+}
+
 @media (min-width: 450px) {
   a#forgot-password {
     font-size: 16px;
