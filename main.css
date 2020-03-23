@@ -248,6 +248,7 @@ p#sign-in-hint {
 
   button.primary {
     font-size: 16px;
+    margin: 0 0 30px 0;
   }
 
   button#toggle-password {
